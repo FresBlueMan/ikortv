@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:layout_width="@dimen/dialog_setting_menu_item_width" android:layout_height="@dimen/dialog_setting_menu_item_height" android:layout_marginLeft="@dimen/dialog_setting_menu_item_hmargin" android:layout_marginTop="@dimen/dialog_setting_menu_item_vmargin" android:layout_marginRight="@dimen/dialog_setting_menu_item_hmargin" android:layout_marginBottom="@dimen/dialog_setting_menu_item_vmargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#20ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iptv2.control.IcomoonView android:textSize="@dimen/width_18_320" android:textColor="#ffffffff" android:gravity="center" android:id="@id/icon" android:layout_width="@dimen/width_30_320" android:layout_height="@dimen/width_30_320" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/width_5_320" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/textsize_big" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ff646464" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/subtext" android:layout_width="fill_parent" android:layout_height="@dimen/width_14_320" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

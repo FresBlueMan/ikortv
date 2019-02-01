@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/player" layout="@layout/widget_player"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.iptv2.control.MarqueeView android:id="@+id/announceUrl" style="@style/Announce"/>
+        <include android:id="@+id/gesture" layout="@layout/widget_gesture"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fit" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout style="@style/VideoPlayer_Panel_TopRight">
+            <include android:id="@+id/p2pstat" layout="@layout/widget_p2pstat"/>
+            <include android:id="@+id/pause" layout="@layout/widget_pause"/>
+            <TextView android:textSize="@dimen/width_28_320" android:textColor="#ffffff" android:id="@+id/keycode_input" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/width_10_320" android:shadowColor="#000000" android:shadowRadius="10"/>
+        </LinearLayout>
+        <ViewStub android:id="@+id/viewstub_overlay_short" android:layout="@layout/widget_live_overlay_short" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ViewStub android:id="@+id/viewstub_overlay_long" android:layout="@layout/widget_live_overlay_long" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.iptv2.control.ToastGroupView android:id="@+id/toast_group" style="@style/ToastGroup"/>
+        <include layout="@layout/widget_live_controlpanel"/>
+        <include layout="@layout/widget_live_menubar"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="right" android:id="@+id/stopErrorGroup" android:background="#66000000" android:visibility="gone" android:layout_width="@dimen/height_160_320" android:layout_height="match_parent" android:layout_marginRight="@dimen/height_5_320">
+        <TextView android:textSize="@dimen/width_7_320" android:textColor="#ffffff" android:id="@+id/stopErrorTxt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/height_30_320" android:shadowColor="#0000ff" android:shadowRadius="2"/>
+    </LinearLayout>
+</FrameLayout>

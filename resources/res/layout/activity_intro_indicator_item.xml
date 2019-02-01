@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/activity_intro_indicator_item_bg" android:layout_width="@dimen/width_6_320" android:layout_height="@dimen/width_6_320" android:layout_marginLeft="@dimen/width_3_320" android:layout_marginRight="@dimen/width_3_320"/>

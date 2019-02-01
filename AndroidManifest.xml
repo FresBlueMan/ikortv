@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.iptv2.ikortv" platformBuildVersionCode="6" platformBuildVersionName="1.5">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="IKORTV" android:largeHeap="true" android:name="com.iptv2.core.Application" android:supportsRtl="true" android:theme="@style/App">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.DispatchActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.LaunchActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.IntroActivity" android:screenOrientation="sensorLandscape" android:theme="@style/IntroActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.WelcomeActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.LiveActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.VodActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.VodDetailActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.iptv2.activity.VodPlayerActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Activity"/>
+        <provider android:authorities="com.iptv2.ikortv.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

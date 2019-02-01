@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/player" layout="@layout/widget_player"/>
+    <FrameLayout android:id="@+id/fit" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/gesture" layout="@layout/widget_gesture"/>
+        <com.iptv2.control.ToastGroupView android:id="@+id/toast_group" style="@style/ToastGroup"/>
+        <include layout="@layout/widget_vodplayer_controlpanel"/>
+        <include layout="@layout/widget_vodplayer_menubar"/>
+        <LinearLayout style="@style/VideoPlayer_Panel_TopRight">
+            <include android:id="@+id/p2pstat" layout="@layout/widget_p2pstat"/>
+            <include android:id="@+id/pause" layout="@layout/widget_pause"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

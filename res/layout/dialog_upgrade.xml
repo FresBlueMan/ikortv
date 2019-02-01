@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/dialog_mask_color" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/content" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/height_140_320" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_15_320" android:layout_marginTop="@dimen/width_10_320" android:layout_marginRight="@dimen/width_15_320" android:layout_marginBottom="@dimen/width_15_320">
+            <TextView android:textSize="@dimen/textsize_big" android:textColor="#ff848484" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.iptv2.control.TextView android:id="@id/info" android:nextFocusDown="@id/btn_upgrade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_10_320" android:maxLines="6" style="@style/Dialog_TextArea" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/loading_wrapper" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_6_320" android:alpha="0.0">
+                <com.victor.loading.rotate.RotateLoading android:id="@id/loading" android:layout_width="@dimen/width_15_320" android:layout_height="@dimen/width_15_320" app:loading_color="#ff2598e5" app:loading_speed="6" app:loading_width="1.0dip" />
+                <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ff848484" android:id="@id/loading_progress" android:layout_width="@dimen/width_40_320" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_4_320" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/button_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_8_320">
+                <com.iptv2.control.TextView android:id="@id/btn_upgrade" style="@style/Dialog_Button" />
+                <com.iptv2.control.TextView android:id="@id/btn_exit" style="@style/Dialog_Button" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

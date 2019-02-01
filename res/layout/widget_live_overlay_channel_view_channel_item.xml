@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/widget_live_overlay_channel_item_width" android:layout_height="@dimen/widget_live_overlay_channel_item_height" android:layout_marginLeft="@dimen/widget_live_overlay_channel_item_hmargin" android:layout_marginTop="@dimen/widget_live_overlay_channel_item_vmargin" android:layout_marginRight="@dimen/widget_live_overlay_channel_item_hmargin" android:layout_marginBottom="@dimen/widget_live_overlay_channel_item_vmargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/width_32_320" android:layout_height="@dimen/width_32_320">
+        <TextView android:textSize="@dimen/width_14_320" android:gravity="center" android:layout_gravity="center" android:id="@id/keycode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/logo" android:visibility="invisible" android:layout_width="@dimen/width_22_320" android:layout_height="@dimen/width_22_320" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_3_320" android:layout_marginRight="@dimen/width_5_320" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/textsize_big" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:singleLine="true" android:shadowColor="#ff000000" android:shadowRadius="2.0" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="@dimen/textsize_normal" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/epg" android:layout_width="fill_parent" android:layout_height="@dimen/width_14_320" android:singleLine="true" android:shadowColor="#ff000000" android:shadowRadius="2.0" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+    <com.iptv2.control.IcomoonView android:textSize="@dimen/width_13_320" android:textColor="@color/favorite_checked_color" android:id="@id/favorites" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/width_5_320" android:text="@string/icon_favorite_checked" android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+</LinearLayout>

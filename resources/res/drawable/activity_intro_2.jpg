@@ -1,0 +1,28 @@
+Error decode img
+jadx.core.utils.exceptions.JadxRuntimeException: Image load error
+	at jadx.core.xmlgen.ResContainer.singleImageFile(ResContainer.java:61)
+	at jadx.api.ResourcesLoader.loadContent(ResourcesLoader.java:105)
+	at jadx.api.ResourcesLoader.lambda$loadContent$0(ResourcesLoader.java:83)
+	at jadx.api.ResourcesLoader$$Lambda$12/310595407.decode(Unknown Source)
+	at jadx.api.ResourcesLoader.decodeStream(ResourcesLoader.java:72)
+	at jadx.api.ResourcesLoader.loadContent(ResourcesLoader.java:83)
+	at jadx.api.ResourceFile.loadContent(ResourceFile.java:53)
+Caused by: java.lang.NullPointerException
+	at java.awt.color.ICC_Profile.intFromBigEndian(ICC_Profile.java:1782)
+	at java.awt.color.ICC_Profile.getNumComponents(ICC_Profile.java:1474)
+	at sun.java2d.cmm.lcms.LCMSTransform.<init>(LCMSTransform.java:98)
+	at sun.java2d.cmm.lcms.LCMS.createTransform(LCMS.java:173)
+	at java.awt.color.ICC_ColorSpace.fromRGB(ICC_ColorSpace.java:218)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.setImageData(JPEGImageReader.java:694)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.readImageHeader(Native Method)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.readNativeHeader(JPEGImageReader.java:609)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.checkTablesOnly(JPEGImageReader.java:347)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.gotoImage(JPEGImageReader.java:481)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.readHeader(JPEGImageReader.java:602)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.readInternal(JPEGImageReader.java:1059)
+	at com.sun.imageio.plugins.jpeg.JPEGImageReader.read(JPEGImageReader.java:1039)
+	at javax.imageio.ImageIO.read(ImageIO.java:1448)
+	at javax.imageio.ImageIO.read(ImageIO.java:1352)
+	at jadx.core.xmlgen.ResContainer.singleImageFile(ResContainer.java:59)
+	... 6 more
+

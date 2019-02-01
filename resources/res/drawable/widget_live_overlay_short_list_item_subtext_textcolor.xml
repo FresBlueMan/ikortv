@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:color="@color/widget_live_overlay_list_item_subtext_checked_textcolor" android:state_activated="true"/>
+    <item android:state_selected="true" android:color="@color/widget_live_overlay_list_item_text_actived_textcolor"/>
+    <item android:color="@color/widget_live_overlay_short_list_item_subtext_textcolor"/>
+</selector>

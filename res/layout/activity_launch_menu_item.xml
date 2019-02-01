@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/activity_launch_menu_item_width" android:layout_height="@dimen/activity_launch_menu_item_height" android:layout_marginLeft="@dimen/activity_launch_menu_item_hmargin" android:layout_marginRight="@dimen/activity_launch_menu_item_hmargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#20ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.iptv2.control.IcomoonView android:textSize="@dimen/width_23_320" android:textColor="#ffafafaf" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_3_320" android:layout_marginBottom="@dimen/width_2_320" />
+        <TextView android:textSize="@dimen/width_10_320" android:textColor="#ffafafaf" android:ellipsize="marquee" android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </LinearLayout>
+</FrameLayout>

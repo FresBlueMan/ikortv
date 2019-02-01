@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/widget_live_overlay_epg_item_width" android:layout_height="@dimen/widget_live_overlay_epg_item_height" android:layout_marginLeft="@dimen/widget_live_overlay_epg_item_hmargin" android:layout_marginTop="@dimen/widget_live_overlay_epg_item_vmargin" android:layout_marginRight="@dimen/widget_live_overlay_epg_item_hmargin" android:layout_marginBottom="@dimen/widget_live_overlay_epg_item_vmargin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_5_320" android:layout_marginRight="@dimen/width_5_320" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/textsize_big" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:singleLine="true" android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+        <TextView android:textSize="@dimen/textsize_normal" android:gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="@dimen/width_14_320" android:singleLine="true" android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+    </LinearLayout>
+    <com.iptv2.control.IcomoonView android:textSize="@dimen/width_16_320" android:gravity="center" android:id="@id/image" android:visibility="gone" android:layout_width="@dimen/width_18_320" android:layout_height="@dimen/width_18_320" android:layout_marginRight="@dimen/width_3_320" />
+</LinearLayout>

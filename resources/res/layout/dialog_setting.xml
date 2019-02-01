@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#60000000" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/content" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_10_320" android:layout_marginBottom="@dimen/width_15_320">
+            <TextView android:textSize="@dimen/textsize_big" android:textColor="#848484" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_15_320" android:layout_marginRight="@dimen/width_15_320"/>
+            <com.iptv2.base.SimpleRecyclerView android:id="@+id/menu_list" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_12_320" android:layout_marginTop="@dimen/width_5_320" android:layout_marginRight="@dimen/width_12_320" android:overScrollMode="never"/>
+            <com.iptv2.base.LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="@dimen/width_10_320" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_10_320" app:border_color="@color/spliter_line_color" app:border_enable="true" app:border_top_size="1dp">
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/textsize_normal" android:textColor="#99ffffff" android:id="@+id/lbl_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/width_2_320" android:singleLine="true"/>
+                    <TextView android:textSize="@dimen/textsize_normal" android:textColor="#99ffffff" android:id="@+id/lbl_expiretime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/width_2_320" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_5_320">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ccffffff" android:ellipsize="middle" android:id="@+id/text_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/width_2_320" android:maxWidth="@dimen/height_80_320" android:singleLine="true"/>
+                        <TextView android:textSize="@dimen/textsize_small" android:textColor="#ffffff" android:id="@+id/text_serviceset" android:background="@drawable/dialog_setting_serviceset_bg" android:paddingLeft="@dimen/width_5_320" android:paddingRight="@dimen/width_5_320" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_4_320" android:singleLine="true"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ccffffff" android:id="@+id/text_expiretime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/width_2_320" android:singleLine="true"/>
+                </LinearLayout>
+            </com.iptv2.base.LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/button_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_6_320">
+                <com.iptv2.control.TextView android:id="@+id/btn_signin" android:visibility="gone" style="@style/Dialog_Button"/>
+                <com.iptv2.control.TextView android:id="@+id/btn_signup" android:visibility="gone" style="@style/Dialog_Button"/>
+                <com.iptv2.control.TextView android:id="@+id/btn_auth" android:visibility="gone" style="@style/Dialog_Button"/>
+                <com.iptv2.control.TextView android:id="@+id/btn_logout" android:visibility="gone" style="@style/Dialog_Button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

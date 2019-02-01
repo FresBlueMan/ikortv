@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@+id/left_menubar" style="@style/MenuBar_AlignLeft">
+        <com.iptv2.control.IcomoonView android:id="@+id/menu_list" android:text="@string/icon_list" style="@style/MenuBarItem"/>
+        <com.iptv2.control.IcomoonView android:id="@+id/menu_favorite" android:text="@string/icon_favorite" style="@style/MenuBarItem"/>
+        <com.iptv2.control.IcomoonView android:id="@+id/menu_lock" android:text="@string/icon_lock" style="@style/MenuBarItem"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/right_menubar" style="@style/MenuBar_AlignRight">
+        <com.iptv2.control.IcomoonView android:id="@+id/menu_share" android:text="@string/icon_share" style="@style/MenuBarItem"/>
+        <com.iptv2.control.IcomoonView android:id="@+id/menu_setting" android:text="@string/icon_setting" style="@style/MenuBarItem"/>
+    </LinearLayout>
+</merge>

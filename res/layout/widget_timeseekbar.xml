@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/timerGroup" android:layout_width="wrap_content" android:layout_height="@dimen/width_15_320">
+        <TextView android:textSize="@dimen/width_10_320" android:textColor="#ffffffff" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="00:00:00" android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+        <TextView android:textSize="@dimen/width_10_320" android:textColor="#ffffffff" android:gravity="center" android:id="@id/timeSp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" / " android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+        <TextView android:textSize="@dimen/width_10_320" android:textColor="#ffffffff" android:gravity="center" android:id="@id/timeDuration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="00:00:00" android:shadowColor="#ff000000" android:shadowRadius="2.0" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="left" android:id="@id/progress" android:background="#7f3c4f8e" android:layout_width="@dimen/widget_timeseekbar_progress_thumb_minwidth" android:layout_height="fill_parent" android:layout_marginTop="@dimen/width_15_320">
+        <View android:layout_gravity="right" android:id="@id/progress_thumb" android:background="#4cffffff" android:layout_width="@dimen/widget_timeseekbar_progress_thumb_minwidth" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

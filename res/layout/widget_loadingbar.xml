@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@drawable/widget_loadingbar_bg" android:visibility="gone" android:layout_width="@dimen/height_135_320" android:layout_height="2.0dip" android:layout_marginTop="@dimen/width_15_320"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

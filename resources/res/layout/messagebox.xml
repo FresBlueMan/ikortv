@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/messagebox_mask_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content" android:background="@color/messagebox_content_bgcolor" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/height_200_320" android:layout_height="match_parent" android:layout_marginTop="@dimen/width_10_320" android:layout_marginBottom="@dimen/width_15_320">
+            <TextView android:textSize="@dimen/messagebox_title_textsize" android:textColor="#ffffff" android:gravity="center" android:id="@+id/title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/width_3_320"/>
+            <TextView android:textSize="@dimen/messagebox_message_textsize" android:textColor="#bfffffff" android:gravity="center" android:id="@+id/message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/width_3_320" android:lineSpacingMultiplier="1.2"/>
+            <com.iptv2.control.EditText android:gravity="center" android:id="@+id/input" android:visibility="gone" android:nextFocusDown="@+id/button1" android:layout_marginTop="@dimen/width_5_320" android:layout_marginBottom="@dimen/width_5_320" android:singleLine="true" android:maxLength="50" android:imeOptions="actionDone" style="@style/Dialog_Edit"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/button_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_10_320">
+                <com.iptv2.control.TextView android:id="@+id/button1" android:visibility="gone" style="@style/Dialog_Button"/>
+                <com.iptv2.control.TextView android:id="@+id/button2" android:visibility="gone" style="@style/Dialog_Button"/>
+                <com.iptv2.control.TextView android:id="@+id/button3" android:visibility="gone" style="@style/Dialog_Button"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="#30ffffff" android:layout_width="match_parent" android:layout_height="@dimen/width_2_320"/>
+        <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/timer" android:background="@drawable/messagebox_timer_bg" android:visibility="gone" android:layout_width="@dimen/width_20_320" android:layout_height="@dimen/width_20_320" android:layout_marginTop="@dimen/width_10_320" android:layout_marginRight="@dimen/width_10_320"/>
+    </FrameLayout>
+    <View android:background="@drawable/shadow_bottom_to_top" android:layout_width="match_parent" android:layout_height="@dimen/width_15_320" android:layout_below="@+id/content"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image_applogo" android:layout_width="@dimen/width_70_320" android:layout_height="@dimen/width_70_320" android:src="@drawable/image_applogo" android:alpha="0"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image_appname" android:layout_width="wrap_content" android:layout_height="@dimen/width_15_320" android:layout_marginTop="@dimen/width_20_320" android:src="@drawable/image_appname" android:alpha="0"/>
+        <com.victor.loading.rotate.RotateLoading android:layout_gravity="center_horizontal" android:id="@+id/loading" android:layout_width="@dimen/width_30_320" android:layout_height="@dimen/width_30_320" android:layout_marginTop="@dimen/width_15_320" android:alpha="0" app:loading_color="#2598e5" app:loading_speed="6" app:loading_width="3dp"/>
+        <TextView android:textSize="@dimen/textsize_big" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/message" android:layout_width="@dimen/height_240_320" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_20_320" android:layout_marginBottom="@dimen/width_10_320" android:lines="2" android:alpha="0"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/textsize_big" android:textColor="#b7b7b7" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/width_20_320" android:alpha="0"/>
+</FrameLayout>

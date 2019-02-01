@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iptv2.base.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#cc0c1431" android:layout_width="@dimen/widget_toast_group_item_left_border_size" android:layout_height="0dp" app:border_color="#eca50d" app:border_enable="true" app:border_left_size="@dimen/widget_toast_group_item_left_border_size">
+    <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ffffff" android:id="@+id/text" android:paddingLeft="@dimen/width_8_320" android:paddingTop="@dimen/width_6_320" android:paddingRight="@dimen/width_6_320" android:paddingBottom="@dimen/width_6_320" android:layout_width="@dimen/widget_toast_group_item_width" android:layout_height="wrap_content" android:alpha="0"/>
+</com.iptv2.base.FrameLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iptv2.control.TextView android:id="@id/text" style="@style/Dialog_Button"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

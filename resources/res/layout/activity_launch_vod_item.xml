@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/activity_launch_vod_item_width" android:layout_height="@dimen/activity_launch_vod_item_height" android:layout_marginLeft="@dimen/activity_launch_vod_item_hmargin" android:layout_marginRight="@dimen/activity_launch_vod_item_hmargin">
+    <FrameLayout android:background="#20ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/logo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/bottom" android:background="@drawable/voditem_name_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/width_16_320">
+            <TextView android:textSize="@dimen/width_10_320" android:textColor="#ffffff" android:ellipsize="marquee" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/width_3_320" android:singleLine="true" android:layout_weight="1" android:marqueeRepeatLimit="marquee_forever"/>
+            <TextView android:textSize="@dimen/width_9_320" android:textColor="#ffbb3d" android:gravity="center" android:id="@+id/score" android:layout_width="@dimen/width_18_320" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

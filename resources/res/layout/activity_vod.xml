@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_vod_genre_width">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.iptv2.control.IcomoonView android:textSize="@dimen/width_45_320" android:textColor="#5affffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_list_empty"/>
+            <TextView android:textSize="@dimen/textsize_big" android:textColor="#5affffff" android:gravity="center" android:id="@+id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/width_8_320" android:shadowColor="#000000" android:shadowRadius="2" android:lineSpacingMultiplier="1.2"/>
+        </LinearLayout>
+        <com.iptv2.base.SimpleRecyclerView android:layout_gravity="center" android:id="@+id/vod_list" android:clipChildren="false" android:layout_width="0dp" android:layout_height="0dp"/>
+        <com.victor.loading.rotate.RotateLoading android:layout_gravity="center" android:id="@+id/loading" android:layout_width="@dimen/width_30_320" android:layout_height="@dimen/width_30_320" app:loading_color="#2598e5" app:loading_speed="6" app:loading_width="3dp"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="left" android:background="#20ffffff" android:layout_width="@dimen/activity_vod_genre_width" android:layout_height="match_parent">
+        <TextView android:id="@+id/time" android:layout_marginTop="@dimen/width_12_320" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/Time"/>
+        <com.iptv2.base.SimpleRecyclerView android:id="@+id/genre_list" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <com.iptv2.control.IcomoonView android:id="@+id/genre_more_up" android:text="@string/icon_more_arrow_up" android:layout_above="@+id/genre_list" android:layout_centerHorizontal="true" style="@style/GenreMore"/>
+        <com.iptv2.control.IcomoonView android:id="@+id/genre_more_down" android:text="@string/icon_more_arrow_down" android:layout_below="@+id/genre_list" android:layout_centerHorizontal="true" style="@style/GenreMore"/>
+        <TextView android:textSize="@dimen/textsize_normal" android:textColor="#ffbb3d" android:id="@+id/pageno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/width_12_320" android:text="0/0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</FrameLayout>

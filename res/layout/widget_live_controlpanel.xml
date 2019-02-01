@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.iptv2.control.IcomoonView android:id="@id/btn_pause" style="@style/VideoPlayer_Button_Pause" />
+    <com.iptv2.base.FrameLayout android:layout_gravity="bottom" android:id="@id/controlpanel" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/width_70_320" android:alpha="0.0" android:translationY="@dimen/width_25_320">
+        <View android:background="@drawable/shadow_top_to_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/width_15_320" />
+        <View android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/width_15_320" />
+        <include android:id="@id/seekbar" layout="@layout/widget_timeseekbar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/width_15_320">
+            <ImageView android:id="@id/logo" android:layout_width="@dimen/width_22_320" android:layout_height="@dimen/width_22_320" android:layout_marginLeft="@dimen/width_10_320" android:layout_marginRight="@dimen/width_5_320" />
+            <TextView android:textSize="@dimen/width_14_320" android:textColor="#ffeca50d" android:gravity="center" android:id="@id/keycode" android:layout_width="@dimen/width_30_320" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="@dimen/width_14_320" android:textColor="#ffeca50d" android:id="@id/name" android:layout_width="@dimen/height_70_320" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_5_320" android:maxLines="2" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_20_320">
+                <TextView android:textSize="@dimen/width_12_320" android:textColor="#ffffffff" android:gravity="center|right" android:id="@id/epgtime1" android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:layout_marginTop="@dimen/width_2_320" android:layout_marginBottom="@dimen/width_2_320" />
+                <TextView android:textSize="@dimen/width_12_320" android:textColor="#a6ffffff" android:gravity="center|right" android:id="@id/epgtime2" android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:layout_marginTop="@dimen/width_2_320" android:layout_marginBottom="@dimen/width_2_320" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/epg_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/width_5_320" android:layout_weight="1.0">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:layout_marginTop="@dimen/width_2_320" android:layout_marginBottom="@dimen/width_2_320">
+                    <TextView android:textSize="@dimen/width_12_320" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/epgtext1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" />
+                    <TextView android:textSize="@dimen/width_12_320" android:textColor="#ffeca50d" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/epgtext1_progress" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/width_12_320" android:textColor="#a6ffffff" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/epgtext2" android:layout_width="fill_parent" android:layout_height="@dimen/width_16_320" android:layout_marginTop="@dimen/width_2_320" android:layout_marginBottom="@dimen/width_2_320" android:maxLines="1" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="@dimen/height_50_320" android:layout_height="fill_parent" android:layout_marginRight="@dimen/width_10_320">
+                <TextView android:textSize="@dimen/width_14_320" android:textColor="#ffffffff" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/mediatype" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="@dimen/width_6_320" android:textColor="#60ffffff" android:gravity="right" android:layout_gravity="bottom" android:id="@id/p2pstat2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/width_3_320" android:maxLines="1" />
+            </FrameLayout>
+            <com.iptv2.control.IcomoonView android:id="@id/setting" android:visibility="gone" android:layout_marginRight="@dimen/width_10_320" style="@style/SettingButton" />
+        </LinearLayout>
+        <View android:background="@color/spliter_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/width_15_320" />
+        <include android:id="@id/loading" layout="@layout/widget_loadingbar" />
+    </com.iptv2.base.FrameLayout>
+</merge>
